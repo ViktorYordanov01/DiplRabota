@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 
-body {
+.body-look {
 	background: #f6f5f7;
 	display: flex;
 	justify-content: center;
@@ -249,3 +249,5 @@ footer a {
     color: #3c97bf;
     text-decoration: none;
 }
+
+
