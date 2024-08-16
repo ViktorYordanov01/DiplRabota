@@ -1,0 +1,110 @@
+#backToTopBtn {
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    position: fixed;
+    bottom: 20px;
+    right: -100px; 
+    display: none; 
+    background-color: #f4f4f4;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: right 0.5s; 
+}
+
+h3{
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+
+#backToTopBtn.show {
+    display: block;
+    right: 0px; 
+    animation: slideInFromRight 0.5s ease; 
+}
+
+#backToTopBtn:hover {
+    background-color: grey;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        right: -100px; 
+    }
+    100% {
+        right: 0px; 
+    }
+}
+
+
+.mid-containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background: #ededf079;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: transform 1s, opacity 1s;
+    
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.photo {
+    flex: 1;
+    padding: 20px;
+    transform-origin: center center;
+    
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.photo img:hover{
+    transform: scale(1.1);
+}
+
+.text {
+    flex: 2;
+    padding: 100px;
+}
+
+#find-out-btn{
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #d90166;
+    border: none;
+    font-size: 18px;
+    color: #fff;
+    padding: 8px 20px;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}
+
+.text-inside{
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(211, 199, 199);
+    padding-top: 10px;
+    margin-top: 12px;
+}
+
+.show-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    background-color: rgb(211, 199, 199);
+}

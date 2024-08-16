@@ -1,0 +1,134 @@
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #EEEDEB;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.main-container {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.box {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.sidebar {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.section {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  padding-top: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+u {
+  text-decoration: underline;
+  color: #333;
+}
+
+b {
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .main-container, .section {
+      width: 90%;
+  }
+
+  .content {
+      grid-template-columns: 1fr;
+  }
+
+  .header {
+      font-size: 1.5rem;
+      padding: 15px;
+  }
+  
+  .sidebar {
+      margin-top: 20px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .main-container, .section {
+      width: 95%;
+      padding: 10px;
+  }
+
+  .header {
+      font-size: 1.2rem;
+      padding: 10px;
+  }
+
+  .box, .sidebar, .section {
+      padding: 10px;
+  }
+
+  .content {
+      grid-template-columns: 1fr;
+      gap: 10px;
+  }
+
+  p {
+      font-size: 0.9rem;
+  }
+
+  h2 {
+      font-size: 1.2rem;
+  }
+}

@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thesis</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/7/7f/Tu-sofia-logo.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/7/7f/Tu-sofia-logo.svg">
+    <link rel="stylesheet" href="/styles/index.css">
+    <style>
+      .carousel-item {
+          height: 500px;
+      }
+
+      .carousel-item img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+      }
+
+      .carousel-caption {
+          background-color: rgba(0, 0, 0, 0.5);
+          padding: 10px;
+          border-radius: 10px;
+      }
+  </style>
 </head>
 <body>
     <!-- Header-->
-    <nav class="py-2 bg-body-tertiary border-bottom">
+    <nav class="py-2 bg-body-tertiary border-bottom sticky-top">
         <div class="container d-flex flex-wrap">
           <ul class="nav me-auto">
             <li class="nav-item"><a href="/htmls/index.html" class="nav-link link-body-emphasis px-2 active" aria-current="page">Home</a></li>
@@ -34,7 +53,129 @@
         </div>
       </header>
 
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image: url('/icons/1495.jpg'); background-size: cover; background-position: center;">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Welcome to my website</h1>
+                <p class="opacity-75">In this website you will gain knowledge about periodic system of elements and it's usage in manufacturing different electronic parts</p>
+                <p><a class="btn btn-lg btn-primary" href="/htmls/signup.html">Sign up today</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('/icons/DlbKbX2-periodic-table-wallpaper.jpg'); background-size: cover; background-position: center;">
+            <svg class="bd-placeholder-img" width="100%" height="100%"  aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Periodic Table of Elements</h1>
+                <p>Here you can learn more about the elements in the periodic table</p>
+                <p><a class="btn btn-lg btn-primary" href="/htmls/explore.html">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" style="background-image: url('/icons/wp5982403-electronic-components-wallpapers.jpg'); background-size: cover; background-position: center;">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Most commonly used components in manufacturing electronic parts</h1>
+                <p>Here you can learn more about the components that are most used in manufacturing different electronic parts</p>
+                <p><a class="btn btn-lg btn-primary" href="/htmls/elcomponents.html">Browse for more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
+      <div class=" row mid-containers">
+        <div class=" col-md-6 photo">
+            <img src="/icons/mendeleev.jpg" alt="Placeholder Image">
+        </div>
+        <div class=" col-md-6 text">
+            <h1>Dimitri Mendeleev</h1>
+            <p>Russian chemist who developed the periodic classification of the elements.</p>
+            <a href="/htmls/mendeleev.html"><button id="find-out-btn">Find out more</button></a>
+        </div>
+    </div>
+
+    <div class=" row mid-containers">
+      <div class=" col-md-6 text">
+          <h1>Microprocessors</h1>
+          <p>Microprocessor is an important part of a computer architecture without which you will not be able to perform anything on your computer.</p>
+         <a href="/htmls/microprocessors.html"> <button id="find-out-btn">Find out more</button></a>
+      </div>
+      <div class=" col-md-6 photo">
+        <img src="/icons/processor.jpg" alt="Placeholder Image">
+    </div>
+  </div>
+
+  <div class=" row mid-containers">
+    <div class=" col-md-6 photo">
+        <img src="/icons/resistors (1).png" alt="Placeholder Image">
+    </div>
+    <div class=" col-md-6 text">
+        <h1>Electronic components</h1>
+        <p>Most Commonly Used Electronic Components and Their Functions</p>
+        <a href="/htmls/elcomponents.html"><button id="find-out-btn">Find out more</button></a>
+    </div>
+</div>
+
+<div class="row mid-containers">
+  <div class=" col-md-6 photo">
+    <img src="https://images.theconversation.com/files/478126/original/file-20220808-4922-kdvkjb.jpg?ixlib=rb-4.1.0&rect=0%2C764%2C5065%2C2532&q=45&auto=format&w=1356&h=668&fit=crop" alt="Placeholder Image" style="width: 300px; height: 200px;">
+    <div class="text-inside">
+      <h4>Semiconductors</h4>
+    </div>
+    <div class="show-more">
+     <a href="/htmls/semiconductors.html"><button id="show-more-btn">Show more </button></a>
+    </div>
+  </div>
+  <div class=" col-md-6 photo">
+    <img src="/icons/qmark.jpg" alt="Placeholder Image" style="width: 300px; height: 200px;">
+    <div class="text-inside">
+      <h4>About second photo</h4>
+    </div>
+    <div class="show-more">
+      <a href="#"><button id="show-more-btn">Show more</button></a>
+    </div>
+  </div>
+  <div class=" col-md-6 photo">
+    <img src="https://via.placeholder.com/300" alt="Placeholder Image" style="width: 300px; height: 200px;">
+    <div class="text-inside">
+      <h4>About third photo</h4>
+    </div>
+    <div class="show-more">
+      <a href="#"><button id="show-more-btn">Show more</button></a>
+    </div>
+  </div>
+  <div class=" col-md-6 photo">
+    <img src="https://via.placeholder.com/300" alt="Placeholder Image" style="width: 300px; height: 200px;">
+    <div class="text-inside">
+      <h4>About fourth photo</h4>
+    </div>
+    <div class="show-more">
+      <a href="#"><button id="show-more-btn">Show more</button></a>
+    </div>
+  </div>
+</div>
+    
+
+<!--Back To Top Button-->
+    <button id="backToTopBtn" onclick="scrollToTop()"><i>Back to Top</i></button>  
       <!-- Footer-->
       <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" id="ibox_footer">
@@ -48,7 +189,9 @@
           </ul>
         </footer>
       </div>
-
       <script src="/functionality/index.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

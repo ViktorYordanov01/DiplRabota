@@ -3,15 +3,18 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #EEEDEB;
   }
   
   header {
-    background-color: #f4f4f4;
-    color: black;
-    padding: 1em 0 0 0;
+    background-color: #EEEDEB;
+    color: #333;
+    padding: 1em 0 1em 0;
   }
   
+  .highlight{
+    border: 2px solid red;
+  }
   #periodic-table {
     display: grid;
     grid-template-columns: repeat(18, 1fr);
@@ -27,11 +30,34 @@ body {
     background-color: white;
     cursor: pointer;
     text-align: center;
+    
   }
   
   .element:hover {
     background-color: #f1f1f1;
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
   }
+
+  .alkali-metal{ background-color: #ff9999;}
+
+  .alkaline-earth{ background-color: #ffcc99; }
+
+  .transition-metal{ background-color: #ffff99; }
+
+  .basic-metal{ background-color: #ccff99; }
+
+  .semi-metal{ background-color: #99ff99; }
+
+  .non-metal{ background-color: #99ccff; }
+
+  .halogen{ background-color: #9999ff; }
+
+  .noble-gas{ background-color: #cc99ff; }
+
+  .lanthanide{ background-color: #ff99cc; }
+
+  .actinide{ background-color: #ff6699; }
 
   .modal {
     display: none;
@@ -46,19 +72,38 @@ body {
     background-color: rgba(0,0,0,0.4);
     padding-top: 60px;
   }
+
+  #element-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
   
   .modal-content {
     background-color: #fefefe;
     margin: 5% auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #888;
-    width: 80%;
-  }
+    width: 70%;
+    height: 80%;
+    display: flex;
   
+  }
+  #wikipedia-iframe{
+    height: 100%;
+  }
+
   .close {
     color: #aaa;
     float: right;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
   }
   
@@ -68,5 +113,71 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
+
+  .legend-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+ h2{
+   margin-top: 50px; 
+   margin-right: 810px;
+ }
+
+.legend-table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-left: 150px;
+}
+
+.legend-table th, .legend-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.legend-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.legend-color-box {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.example-block-container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about{
+  display: flex;
+  margin: 20px 20px 0px 20px;
+}
+
+.close{
+  text-align: end;
+}
+
+.state {
+  margin: 10px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #000;
+  background-color: #ddd;
+}
+
+.element.highlight {
+  border: 1px solid #ccc; /* Change to whatever highlighting style you prefer */
+  background-color: #f1f1f1; /* Example highlighting */
+  transition: transform 0.5s ease;
+  transform: scale(1.1);
+}
+  
 
   

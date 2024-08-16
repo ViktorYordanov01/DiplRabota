@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microprocessors</title>
+    <link href="/styles/microprocessors.css" rel="stylesheet">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/7/7f/Tu-sofia-logo.svg">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">Introduction to Microprocessors</div>
+        <h2>What is Microprocessor?</h2>
+        <p style="font-size: 17px;">A Microprocessor is an important part of a computer architecture without which you will not be able to perform anything on your computer. It is a programmable device that takes in input performs some arithmetic and logical operations over it and produces the desired output. In simple words, a Microprocessor is a digital device on a chip that can fetch instructions from memory, decode and execute them, and give results. </p>
+        
+    </div>
+
+        <div class="section">
+            <h2>Block Diagram of a Microprocessor</h2>
+            <p>A Microprocessor takes a bunch of instructions in machine language and executes them, telling the processor what it has to do. The microprocessor performs three basic things while executing the instruction: </p>
+            <ul>
+                <li value="1">It performs some basic operations like addition, subtraction, multiplication, division, and some logical operations using its Arithmetic and Logical Unit (ALU). New Microprocessors also perform operations on floating-point numbers. </li>
+                <li value="2">Data in microprocessors can move from one location to another.</li>
+                <li value="3">It has a Program Counter (PC) register that stores the address of the next instruction based on the value of the PC, Microprocessor jumps from one location to another and makes decisions. </li>
+            </ul>
+            <p>A typical Microprocessor structure looks like this.</p>
+            <p id="image"><img src="/icons/diagram.png" width="500px" height="300px"></p>
+            <p dir="ltr"><b><strong>Clock Speed of different Microprocessor:</strong></b><span> </span></p>
+         <ul>
+          <li value="1"><b><strong>16-bit Microprocessor</strong></b></li>
+         </ul>
+           <pre><span>8086: 4.7MHz, 8MHz, 10MHz</span><br/><br/><span>8088: more than 5MHz</span><br/><br/><span>80186/80188: 6MHz</span><br/><br/><span>80286: 8MHz </span></pre>
+         <ul>
+          <li value="1"><b><strong>32-bit Microprocessor </strong></b></li>
+         </ul>
+           <pre><span>INTEL 80386: 16MHz to 33MHz</span><br/><br/><span>INTEL 80486: 16MHz to 100MHz</span><br/><br/><span>PENTIUM: 66MHz </span></pre>
+         <ul>
+          <li value="1"><b><strong>64-bit Microprocessor </strong></b></li>
+         </ul>
+           <pre><span>INTEL CORE-2: 1.2GHz to 3GHz</span><br/><br/><span>INTEL i7: 66GHz to 3.33GHz</span><br/><br/><span>INTEL i5: 2.4GHz to 3.6GHz</span><br/><br/><span>INTEL i3: 2.93GHz to 3.33GHz </span></pre>
+         <p dir="ltr"><span>We do not have any 128-bit Microprocessor at work at present one of the reasons for this is that we are a long way from exhausting the 64-bit address space itself, we use it at a constant rate of roughly 2 bits every 3 years. At present we have only used 48 bits of 64 bits so why require 128-bit address space. Also, 128-bit Microprocessor would be much slower than the 64 bit Microprocessor. </span></p>
+        </div>
+
+        <div class="section">
+            <h2>Types of Processor</h2>
+             <h3>Complex Instruction Set Computer (CISC)</h3>
+              <p>CISC or Complex Instruction Set Computer is a computer architecture where instructions are such that a single instruction can execute multiple low-level operations like loading from memory, storing into memory, or an arithmetic operation, etc. It has multiple addressing nodes within a single instruction. CISC makes use of very few registers. </p>
+              <p><b>Example of CISC are</b></p>
+              <ul>
+                <li value="1">Intel 386</li>
+                <li value="2">Intel 486</li>
+                <li value="3">Pentium</li>
+                <li value="4">Pentium Pro</li>
+                <li value="5">Pentium II</li>
+                <li value="6">Pentium III</li>
+                <li value="7">Motorola 68000</li>
+                <li value="8">Motorola 68020</li>
+                <li value="9">Motorola 68040 etc.</li>
+              </ul>
+
+              <h3>Reduced Instruction Set Computer (RISC)</h3>
+              <p>RISC or Reduced Instruction Set Computer is a computer architecture where instruction is simple and designed to get executed quickly. Instructions get completed in one clock cycle this is because of the optimization of instructions and pipelining (a technique that allows for simultaneous execution of parts, or stages, of instructions more efficiently process instructions). RISC makes use of multiple registers to avoid large interactions with memory. It has few addressing nodes. </p>
+              <p><b>Example of RISC are</b></p>
+              <ul>
+                <li value="1">IBM RS6000</li>
+                <li value="2">MC88100</li>
+                <li value="3">DEC Alpha 21064</li>
+                <li value="4">DEC Alpha 21164</li>
+                <li value="5">DEC Alpha 21264</li>
+              </ul>
+
+            <h3>Explicitly Parallel Instruction Computing (EPIC)</h3>
+            <p>EPIC or Explicitly Parallel Instruction Computing permits computers to execute instructions parallel using compilers. It allows complex instructions execution without using higher clock frequencies. EPIC encodes its instruction into 128-bit bundles. each bundle contains three instructions which are encoded in 41 bits each and a 5-bit template field(contains information about types of instructions in a bundle and which instructions can be executed in parallel).</p>
+            <p><b>Example of EPIC is</b></p>
+            <ul>
+                <li value="1">IA-64 (Intel Architecture-64)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Evolution of Microprocessors</h2>
+            <p><b>The Evolution of Microprocessors are categorize as</b></p>
+            <ul>
+                <li value="1"><b>First Gene­ration (4-bit Microprocessors):</b> The Intel Corporation first introduce­d the microprocessor in 1971-1972, naming it the Inte­l 4004. This initial microprocessor could perform basic arithmetic and logical functions. It also containe­d a control unit capable of fetching, decoding, and e­xecuting instructions.</li>
+                <li value="2"><b>Second Ge­neration (8-bit Microprocessor):</b> The inte­l corporation first introduced the 8 bit microprocessor in 1973 with the­ intel 8008. This was followed by an enhance­d model, the intel 8088.</li>
+                <li value="3"><b>Third Gene­ration (16-bit Microprocessors):</b> The­ Third Generation introduced microproce­ssors capable of performing 16 bit operations. Introduce­d in 1978, this generation was repre­sented by processors like­ the Intel 8086, Zilog Z800 and 80286.</li>
+                <li value="4"><b>Fourth Generation (32 – bit Microprocessors):</b>The most Used and famous 32 bit microprocessor was intel 80386.</li>
+                <li value="5"><b>Fifth Generation (64 – bit Microprocessors):</b>Since 1995, microprocessors with 64-bit processors which features 64 bit processors like Intel’s Pentium pro which allows multiple CPU’s in one.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Basic Terms used in Microprocessor</h2>
+            <p><b>Given below are the some basic term used in the microprocessors</b></p>
+            <ul>
+                <li value="1"><b>Instruction Set:</b> Instruction set is a group of instructions in the microprocess which can be executed. It is the Interface between hardware and software.</li>
+                <li value="2"><b>Bus:</b> Buses are used to carry data, address and control information within a microprocessor. There are three types of Bus which are data buses, address buses, and control buses.</li>
+                <li value="3"><b>IPC (Instructions Per Cycle):</b> It is Measured as the number of instructions that a CPU can execute in a Single clock cycle.</li>
+                <li value="4"><b>Clock Speed:</b> It refers to the number of operations a processor can perform per second. It is Measured in megahertz (MHz) or gigahertz (GHz).</li>
+                <li value="5"><b>Bandwidth:</b> It is measured as is the number of bits processed during a single instruction.</li>
+                <li value="6"><b>Word Length:</b>It Shows the number of bits a processor can handle at a time.</li>
+                <li value="7"><b>Data Types:</b> It Supports various formats such as binary, ASCII, Signed and Unsigned Bits.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Applications of Microprocessor</h2>
+            <p><b>Given below are the Applications of the Microprocessors</b></p>
+            <ul>
+                <li value="1"><b>Computer:</b> The Microprocessors are the CPU’s in computers.</li>
+                <li value="2"><b>Embedded Systems:</b> It is utilized as the main processing block in the Embedded systems such as Washing machines, microwaves and other equipments.</li>
+                <li value="3"><b>Industrial Automation:</b> It can be used to control Industrial machinery and equipments.</li>
+                <li value="4"><b>Automotive:</b> The Modern day Vehicles uses Microprocessors in there ECUs.</li>
+                <li value="5"><b>Telecommunications:</b> The Microprocessors are utilized in the Telecommunications systems such as routers, modems, and switches.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Conclusion</h2>
+            <p>In the following article we have gone through the Microprocessor, we have seen its definition along with its block diagram and different types, we also gone through Evolution of Microprocessors with its Applications.</p>
+        </div>
+
+</body>
+</html>
