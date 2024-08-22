@@ -49,7 +49,7 @@ h3{
     opacity: 0;
     transform: translateX(-100%);
     transition: transform 1s, opacity 1s;
-    
+
 }
 
 .visible {
@@ -89,6 +89,21 @@ h3{
     transition: transform 0.5s ease;
     transform: scale(1.1);
 }
+#show-more-btn{
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    border: none;
+    background-color: #d90166;
+    margin-bottom: 10px;
+    padding: 5px 15px;
+    font-size: 15px;
+    color: #fff;
+    transition: transform 0.5s ease;
+}
+
+#show-more-btn:hover{
+    transform: scale(1.1);
+}
+
 
 .text-inside{
     font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -96,7 +111,7 @@ h3{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(211, 199, 199);
+    background-color: #ededf079;
     padding-top: 10px;
     margin-top: 12px;
 }
@@ -106,5 +121,10 @@ h3{
     justify-content: center;
     align-items: center;
     padding-bottom: 5px;
-    background-color: rgb(211, 199, 199);
+    background-color: #ededf079;
 }
+
+body{
+    background-color: #f4f4f4;
+}
+

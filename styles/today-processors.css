@@ -1,0 +1,161 @@
+body{
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #EEEDEB;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.header{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+}
+
+.main-container{
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-section{
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.section{
+    display: block;
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+.half{
+    display: flex;
+   
+}
+
+#section-header{
+    flex: 1;
+}
+
+.section img{
+    margin: auto;
+    display: block;
+}
+
+
+.font-stretch-ultra-condensed{
+    font-stretch: ultra-condensed;   
+}
+
+.relative{
+    position: relative;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.max-w-3xl{
+    max-width: 48rem;
+}
+
+.border-b{
+    border-bottom-width: 1px;
+}
+
+.border-gray-300{
+    --tw-border-opacity: 1;
+    border-color: rgb(216 216 216 / var(--tw-border-opacity)); ;
+}
+
+.pb-1{
+    padding-bottom: 0.25rem;
+}
+
+
+
+.text-lg{
+    font-size: 1.125rem;
+}
+
+.font-bold{
+    font-weight: 700;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.leading-normal{
+    line-height: 1.5;
+}
+
+.leading-compact{
+    line-height: 1.125;
+}
+
+.tracking-widest{
+    letter-spacing: 0.1em;
+}
+
+.font-stretch-ultra-condensed{
+    font-stretch: ultra-condensed;
+}
+
+
+.top-picks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.section-1, .section-2, .section-3, .section-4, .section-5, .section-6, .section-7, .section-8{
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9; 
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 300px; 
+    flex-direction: row;
+}
+
+.img-container {
+    flex-shrink: 0;  
+}
+
+.text{
+    margin-left: 20px;
+}
+
+.inside-text{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+

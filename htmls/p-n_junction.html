@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-N Junction | Thesis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/7/7f/Tu-sofia-logo.svg">
+    <link rel="stylesheet" href="/styles/p-n_junction.css">
+</head>
+<body>
+    <nav class="py-2 bg-body-tertiary border-bottom sticky-top">
+        <div class="container d-flex flex-wrap">
+          <ul class="nav me-auto">
+            <li class="nav-item"><a href="/htmls/index.html" class="nav-link link-body-emphasis px-2 active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="/htmls/explore.html" class="nav-link link-body-emphasis px-2">Explore</a></li>
+            <li class="nav-item"><a href="/htmls/about.html" class="nav-link link-body-emphasis px-2">About</a></li>
+          </ul>
+          <ul class="nav">
+            <li class="nav-item"><a href="/htmls/login.html" class="nav-link link-body-emphasis px-2">Login</a></li>
+            <li class="nav-item"><a href="/htmls/signup.html" class="nav-link link-body-emphasis px-2">Sign up</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="main-container">
+        <img src="/icons/p-n_images/photo-1.gif">
+        <div class="inside">
+        <div class="header">The P-N Junction</div>
+        <p style="margin-left: 32px;">A PN-junction is formed when an N-type material is fused together with a P-type material creating a semiconductor diode.</p>
+    </div>
+      </div>
+
+      <div class="section">
+         <p>This tutorial about PN junction theory shows that when silicon is doped with small amounts of Antimony, an N-type semiconductor material is formed, and when the same silicon material is doped with small amounts of Boron, a P-type semiconductor material is formed.</p>
+         <p>This is all well and good, but these newly doped N-type and P-type semiconductor materials do very little on their own as they are electrically neutral. However, if we join (or fuse) these two semiconductor materials together they behave in a very different way as they merge together producing what is generally known as a “PN Junction” allowing us to study the effect of PN junction theory.</p>
+         <p>When the N-type semiconductor and P-type semiconductor materials are first joined together a very large density gradient exists between both sides of the PN junction. The result is that some of the free electrons from the donor impurity atoms begin to migrate across this newly formed junction to fill up the holes in the P-type material producing negative ions.</p>
+         <p>However, because the electrons have moved across the PN junction from the N-type silicon to the P-type silicon, they leave behind positively charged donor ions ( ND ) on the negative side and now the holes from the acceptor impurity migrate across the junction in the opposite direction into the region where there are large numbers of free electrons.</p>
+         <p>As a result, the charge density of the P-type along the junction is filled with negatively charged acceptor ions ( NA ), and the charge density of the N-type along the junction becomes positive. This charge transfer of electrons and holes across the PN junction is known as <b>diffusion</b>. The width of these P and N layers depends on how heavily each side is doped with acceptor density NA, and donor density ND, respectively.</p>
+         <p>This process continues back and forth until the number of electrons which have crossed the junction have a large enough electrical charge to repel or prevent any more charge carriers from crossing over the junction. Eventually a state of equilibrium (electrically neutral situation) will occur producing a “potential barrier” zone around the area of the junction as the donor atoms repel the holes and the acceptor atoms repel the electrons.</p>
+         <p>Since no free charge carriers can rest in a position where there is a potential barrier, the regions on either sides of the junction now become completely depleted of any more free carriers in comparison to the N and P type materials further away from the junction. This area around the <b>PN Junction</b> is now called the <b>Depletion Layer</b>.</p>
+      </div>
+
+      <div class="section">
+         <h3>The PN junction</h3>
+         <img src="/icons/p-n_images/photo-2.gif" style="margin-bottom: 10px;">
+         <p>The total charge on each side of a <i>PN Junction</i> must be equal and opposite to maintain a neutral charge condition around the junction. If the depletion layer region has a distance D, it therefore must therefore penetrate into the silicon by a distance of Dp for the positive side, and a distance of Dn for the negative side giving a relationship between the two of:  Dp*NA = Dn*ND  in order to maintain charge neutrality also called equilibrium.</p>
+      </div>
+
+      <div class="section">
+        <h3>Depletion Layer Distance</h3>
+        <img src="/icons/p-n_images/photo-3.gif" style="margin-bottom: 10px;">
+        <p>As the N-type material has lost electrons and the P-type has lost holes, the N-type material has become positive with respect to the P-type. Then the presence of impurity ions on both sides of the junction cause an electric field to be established across this region with the N-side at a positive voltage relative to the P-side. The problem now is that a free charge requires some extra energy to overcome the barrier that now exists for it to be able to cross the depletion region junction.</p>
+        <p>This electric field created by the diffusion process has created a “built-in potential difference” across the junction with an open-circuit (zero bias) potential of:</p>
+        <img src="/icons/p-n_images/photo-4.gif" style="margin-bottom: 10px;">
+        <p>Where: Eo is the zero bias junction voltage, VT the thermal voltage of 26mV at room temperature, ND and NA are the impurity concentrations and ni is the intrinsic concentration.</p>
+        <p>A suitable positive voltage (forward bias) applied between the two ends of the PN junction can supply the free electrons and holes with the extra energy. The external voltage required to overcome this potential barrier that now exists is very much dependent upon the type of semiconductor material used and its actual temperature.</p>
+        <p>Typically at room temperature the voltage across the depletion layer for silicon is about 0.6 – 0.7 volts and for germanium is about 0.3 – 0.35 volts. This potential barrier will always exist even if the device is not connected to any external power source, as seen in diodes.</p>
+        <p>The significance of this built-in potential across the junction, is that it opposes both the flow of holes and electrons across the junction and is why it is called the potential barrier. In practice, a <b>PN junction</b> is formed within a single crystal of material rather than just simply joining or fusing together two separate pieces.</p>
+        <p>The result of this process is that the PN junction has rectifying current–voltage (IV or I–V) characteristics. Electrical contacts are fused onto either side of the semiconductor to enable an electrical connection to be made to an external circuit. The resulting electronic device that has been made is commonly called a PN junction Diode or simply Signal Diode.</p>
+        <p></p>
+      </div>
+
+      <div class="section">
+        <h3>Conclusion</h3>
+        <p>Then we have seen here in this tutorial about PN junction theory, that PN junctions can be made by joining or diffusing together differently doped semiconductor materials to produce an electronic device called a diode which can be used as the basic semiconductor structure of rectifiers, all types of transistors, LED’s, solar cells, and many more such solid state devices.</p>
+        <p></p>
+      </div>
+
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" id="ibox_footer">
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Viktor Yordanov</span>
+          </div>
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/jordanov01/"><img class="bi" width="24" height="24" src="/icons/instagram_icon.png"></img></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/viktor-jordanov-779a62238/"><img class="bi" width="24" height="24" src="/icons/linkedin_icon.png"></img></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/viktor.jordanov.376"><img class="bi" width="24" height="24" src="/icons/facebook_icon.png"></img></a></li>
+          </ul>
+        </footer>
+      </div>
+
+</body>
+</html>

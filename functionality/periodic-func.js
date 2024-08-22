@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           document.addEventListener('DOMContentLoaded', () => {
             const legendItems = document.querySelectorAll('.legend-table tr');
-        
+            
             legendItems.forEach(item => {
                 item.addEventListener('click', () => {
                     const category = item.getAttribute('data-category');
@@ -62,5 +62,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         el.classList.add('highlight');
                     }
                 });
+        
+                
+                setTimeout(() => {
+                    allElements.forEach(el => {
+                        el.classList.remove('highlight');
+                    });
+                }, 5000); 
             }
         });
